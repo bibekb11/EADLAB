@@ -53,7 +53,7 @@ git stash → stash working directory\
 git help → manpages for git\
 git help “gitCommand”
 
-### **Collaboration and Contribution on GitHub**
+## **Collaboration and Contribution on GitHub**
 
 The workflow for contributing code can seem daunting at first. The most important thing to remember is to follow the patterns and standards outlined by the project you are working on (as we have already discussed). The general workflow that GitHub supports is fairly simple.
 
