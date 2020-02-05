@@ -35,3 +35,51 @@ The Local Repository is everything in your .git directory. Mainly what you will 
 
 **4. Rmote Repository**
 A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting service like GitHub or on an internal server.In contrast to a local repository, a remote typically does not provide a file tree of the project's current state. Instead, it only consists of the .git versioning data.
+
+Here are a list of other commands that you will see often and their uses:
+git init → Create a new git repository.\
+git add “newfile” → Add a new file to your staging area.\
+git commit → Adds staged changes to your local repository.\
+git push “remote” “ branch” → Push local repository changes to your hosting service\
+git pull “remote” “ branch” → pull code from your hosting service to your local directory\
+git branch → See local branches\
+git branch “newName” → Create new local branch\
+git checkout “branchName” → Switch branches\
+git diff → See the actual difference in code between your working tree and your staging area\
+git status → Show which files are being tracked v. untracked\
+git log → Show recent commit history\
+git show “commit_id” → show details of specific commit\
+git stash → stash working directory\
+git help → manpages for git\
+git help “gitCommand”
+
+### **Collaboration and Contribution on GitHub**
+
+The workflow for contributing code can seem daunting at first. The most important thing to remember is to follow the patterns and standards outlined by the project you are working on (as we have already discussed). The general workflow that GitHub supports is fairly simple.
+
+1.Fork the target repo to your own account.
+2.Clone the repo to your local machine.
+3.Check out a new "topic branch" and make changes.
+4.Push your topic branch to your fork.
+5.Use the diff viewer on GitHub to create a pull request via a discussion.
+6.Make any requested changes.
+7.The pull request is then merged (usually into the master branch) and the topic branch is deleted from the upstream (target) repo.
+
+#### Step 1: Forking\
+#### Step 2: Cloning\
+             Clone the repo using the URL in the right sidebar.
+#### Step 3: Adding the Upstream Remote\
+          Change into the cloned directory and then at this point, you can add the upstream remote:
+#### Step 4: Checking Out a Topic Branch\
+          However, before you make your own changes, checkout a topic branch:
+#### Step 5: Committing\
+          Now, you can make your changes, and create a commit that tracks just those changes.
+#### Step 6: Pushing\
+          Next, you'll push this topic branch to your own fork of the project.
+#### Step 7: Creating a Pull Request\
+           Finally, you will create a pull request. First, go to your fork of the repo. You might see a "your recently pushed branches",  and if so, you can choose "Compare and Pull Request". Otherwise, you can select your branch from the dropdown, and subsequently click "Pull Request" or "Compare" at the top right of the repo section.
+
+### **Conclusion**
+
+
+From the above lab session we can conclude that Real life projects generally have multiple developers working in parallel. So a version control system like Git is needed to ensure there are no code conflicts between the developers.Additionally, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of the code.Finally, sometimes several projects which are being run in parallel involve the same codebase. In such a case, the concept of branching in Git is very important.
