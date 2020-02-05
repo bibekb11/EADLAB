@@ -78,6 +78,16 @@ The workflow for contributing code can seem daunting at first. The most importan
           Next, you'll push this topic branch to your own fork of the project.
 #### Step 7: Creating a Pull Request\
            Finally, you will create a pull request. First, go to your fork of the repo. You might see a "your recently pushed branches",  and if so, you can choose "Compare and Pull Request". Otherwise, you can select your branch from the dropdown, and subsequently click "Pull Request" or "Compare" at the top right of the repo section.
+           
+ ## **Branching**
+A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master . As you start making commits, you're given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.The belows shows the basic branching in git.
+
+### Creating a New Branch
+we use git branch (branchname) in order to create a new branch
+
+### Switching Branches
+To switch to an existing branch, you run the git checkout command. Let’s switch to the new testing branch.
+ 
 
 ### **Conclusion**
 
