@@ -33,10 +33,11 @@ The Staging Area is when git starts tracking and saving changes that occur in fi
 **3. Local Repository:**
 The Local Repository is everything in your .git directory. Mainly what you will see in your Local Repository are all of your checkpoints or commits. It is the area that saves everything (so don’t delete it). That’s it.How do you add items from your Staging Area to your Local Repository? The git command git commit takes all changes in the Staging Area, wraps them together and puts them in your Local Repository. A commit is simply a checkpoint telling git to track all changes that have occurred up to this point using our last commit as a comparison. After committing, your Staging Area will be empty.
 
-**4. Rmote Repository**
+**4. Remote Repository**
 A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting service like GitHub or on an internal server.In contrast to a local repository, a remote typically does not provide a file tree of the project's current state. Instead, it only consists of the .git versioning data.
 
 Here are a list of other commands that you will see often and their uses:
+
 git init → Create a new git repository.\
 git add “newfile” → Add a new file to your staging area.\
 git commit → Adds staged changes to your local repository.\
