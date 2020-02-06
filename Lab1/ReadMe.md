@@ -22,4 +22,75 @@ Git is a free and open source distributed version control system designed to han
 
 **Workflow of Git**
 
+![Git Worlkflow](https://github.com/SagarGi/EADLAB/blob/master/Lab1/gitworkflow.jfif)
 
+**1. Working Directory:**
+The Working Directory is the area where you are currently working. It is where your files live. This area is also known as the “untracked” area of git. Any changes to files will be marked and seen in the Working Directory. Here if you make changes and do not explicitly save them to git, you will lose the changes made to your files. Run the command git --status. This command will show you two things: The files in your Working Tree and the files in your Staging Area. It will look something like the image below if you don’t have anything in your Staging Area.We use git --init to initialize the working directory.
+
+**2. Staging Area:**
+The Staging Area is when git starts tracking and saving changes that occur in files. These saved changes reflect in the .git directory. That is about it when it comes to the Staging Area. You tell git that I want to track these specific files, then git says okay and moves them from you Working Tree to the Staging Area and says “Cool, I know about this file in its entirety.”. Running the command git add #filename# will add a specific file to the Staging Area from your Working Tree. If you want to add everything from the Working Tree, then run the command git add . The . operator is a wildcard meaning all files.
+
+**3. Local Repository:**
+The Local Repository is everything in your .git directory. Mainly what you will see in your Local Repository are all of your checkpoints or commits. It is the area that saves everything (so don’t delete it). That’s it.How do you add items from your Staging Area to your Local Repository? The git command git commit takes all changes in the Staging Area, wraps them together and puts them in your Local Repository. A commit is simply a checkpoint telling git to track all changes that have occurred up to this point using our last commit as a comparison. After committing, your Staging Area will be empty.
+
+**4. Remote Repository**
+A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting service like GitHub or on an internal server.In contrast to a local repository, a remote typically does not provide a file tree of the project's current state. Instead, it only consists of the .git versioning data.
+
+Here are a list of other commands that you will see often and their uses:
+
+git init → Create a new git repository.\
+git add “newfile” → Add a new file to your staging area.\
+git commit → Adds staged changes to your local repository.\
+git push “remote” “ branch” → Push local repository changes to your hosting service\
+git pull “remote” “ branch” → pull code from your hosting service to your local directory\
+git branch → See local branches\
+git branch “newName” → Create new local branch\
+git checkout “branchName” → Switch branches\
+git diff → See the actual difference in code between your working tree and your staging area\
+git status → Show which files are being tracked v. untracked\
+git log → Show recent commit history\
+git show “commit_id” → show details of specific commit\
+git stash → stash working directory\
+git help → manpages for git\
+git help “gitCommand”
+
+## **Collaboration and Contribution on GitHub**
+
+The workflow for contributing code can seem daunting at first. The most important thing to remember is to follow the patterns and standards outlined by the project you are working on (as we have already discussed). The general workflow that GitHub supports is fairly simple.
+
+1.Fork the target repo to your own account.
+2.Clone the repo to your local machine.
+3.Check out a new "topic branch" and make changes.
+4.Push your topic branch to your fork.
+5.Use the diff viewer on GitHub to create a pull request via a discussion.
+6.Make any requested changes.
+7.The pull request is then merged (usually into the master branch) and the topic branch is deleted from the upstream (target) repo.
+
+#### Step 1: Forking\
+#### Step 2: Cloning\
+             Clone the repo using the URL in the right sidebar.
+#### Step 3: Adding the Upstream Remote\
+          Change into the cloned directory and then at this point, you can add the upstream remote:
+#### Step 4: Checking Out a Topic Branch\
+          However, before you make your own changes, checkout a topic branch:
+#### Step 5: Committing\
+          Now, you can make your changes, and create a commit that tracks just those changes.
+#### Step 6: Pushing\
+          Next, you'll push this topic branch to your own fork of the project.
+#### Step 7: Creating a Pull Request\
+           Finally, you will create a pull request. First, go to your fork of the repo. You might see a "your recently pushed branches",  and if so, you can choose "Compare and Pull Request". Otherwise, you can select your branch from the dropdown, and subsequently click "Pull Request" or "Compare" at the top right of the repo section.
+           
+ ## **Branching**
+A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master . As you start making commits, you're given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.The belows shows the basic branching in git.
+
+### Creating a New Branch
+we use git branch (branchname) in order to create a new branch
+
+### Switching Branches
+To switch to an existing branch, you run the git checkout command. Let’s switch to the new testing branch.
+ 
+
+### **Conclusion**
+
+
+From the above lab session we can conclude that Real life projects generally have multiple developers working in parallel. So a version control system like Git is needed to ensure there are no code conflicts between the developers.Additionally, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of the code.Finally, sometimes several projects which are being run in parallel involve the same codebase. In such a case, the concept of branching in Git is very important.
