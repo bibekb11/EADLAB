@@ -5,24 +5,24 @@
 # **Theory :**
  
 ## **Source Code Management**
-A Source Code Management (SCM) is a software tool used by programmers to manage the source codes.
-SCMs are used to give versions/revisions to the program. Each version is given a timestamp and include the person responsible for the change. Even various versions can be compared and merged with other versions. This is why SCM is also referred to Version Control, Revision Control or Source Control.
+Source code management (SCM) is used to track modifications to a source code repository. SCM tracks a running history of changes to a code base and helps resolve conflicts when merging updates from multiple contributors. SCM is also synonymous with Version control.
+As software projects grow in lines of code and contributor head count, the costs of communication overhead and management complexity also grow. SCM is a critical tool to alleviate the organizational strain of growing development costs.
 
 ## **Types of Version Vontrol System**
 There are two main types of version control system.
 
 ### 1. Centralized Version Control System
-The main concept of Centralized Version Control is that it works in a client and server relationship. The repository is located in one place and allows access to multiple clientsIt’s very similar to FTP where you have FTP clients which connect to FTP server. Here all the user changes and commits have to pass through the central server. 
+The main concept of Centralized Version Control is that it works in a client and server model. The repository is located in one server and can be accessed by multiple connections.It’s very similar to FTP client-server model.All the user changes and commits have to pass through the central server and there is no such thing as a local repo. 
 
 ### 2. Distributed Version Control System
-These systems are newer to use. In Distributed Version Control, each user has their own copy of the entire repository as well as the files and history. For Ex: Git and Mercurial
+These systems are comparatively newer concepts. In Distributed Version Control, each collaborator get theit own version of the repository and can make changes and finalize it before actually committing to the original repo. Eg. Git and Mercurial
 
 #### **Git as a Source Code Management**
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.s
 
 **Workflow of Git**
 
-![Git Worlkflow](https://github.com/SagarGi/EADLAB/blob/master/Lab1/gitworkflow.jfif)
+![Git Worlkflow](https://github.com/bibekb11/EADLAB/blob/master/Lab1/gitworkflow.png)
 
 **1. Working Directory:**
 The Working Directory is the area where you are currently working. It is where your files live. This area is also known as the “untracked” area of git. Any changes to files will be marked and seen in the Working Directory. Here if you make changes and do not explicitly save them to git, you will lose the changes made to your files. Run the command git --status. This command will show you two things: The files in your Working Tree and the files in your Staging Area. It will look something like the image below if you don’t have anything in your Staging Area.We use git --init to initialize the working directory.
