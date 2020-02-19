@@ -1,6 +1,6 @@
 # **Lab1**
 # **Objective : Source Code Management**
-# **Date : 6th feb 2020**
+# **Date : 6th Feb 2020**
 
 # **Theory :**
  
