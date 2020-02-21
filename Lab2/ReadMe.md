@@ -21,7 +21,7 @@ This pattern involves a single class which is responsible to create an object wh
 
 A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.
 
-Points to Remember
+Points to Remember:
 An abstract class must be declared with an abstract keyword.
 It can have abstract and non-abstract methods.
 It cannot be instantiated.
