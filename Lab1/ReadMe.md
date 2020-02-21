@@ -28,7 +28,14 @@ Git is a free and open source distributed version control system designed to han
 The Working Directory is the area where a collaborator is currently working. It is where the local files are present. This area is also known as the “untracked” area of git. Any changes to files will be marked and seen in the Working Directory. Here if you make changes and do not explicitly save them to git, you will lose the changes made to your files. Run the command git --status. This command will show you two things: The files in your Working Tree and the files in your Staging Area. It will look something like the image below if you don’t have anything in your Staging Area.We use git --init to initialize the working directory.
 
 **2. Staging Area:**
-The Staging Area is when git starts tracking and saving changes that occur in files. These saved changes reflect in the .git directory. That is about it when it comes to the Staging Area. You tell git that I want to track these specific files, then git says okay and moves them from you Working Tree to the Staging Area and says “Cool, I know about this file in its entirety.”. Running the command git add #filename# will add a specific file to the Staging Area from your Working Tree. If you want to add everything from the Working Tree, then run the command git add . The . operator is a wildcard meaning all files.
+One of the most essential concepts to Git is that of the staging area. Its use can fundamentally change how you work, for the better! Let’s go over how exactly it works and what you’ll need to know to use it.
+
+With most other version control systems, there’s 2 places to store data: your working copy (the folders/files that you’re currently using) and the datastore (where the version control decides how to pack and store your changes). In Git there’s a third option: the staging area (or index). It’s basically a loading dock where you get to determine what changes get shipped away.
+Since the working directory and what gets saved by Git are essentially decoupled, this allows the developer to build up their commits however they want, and not in a fashion where the VCS tells you. Since there’s a layer between when Git actually saves the data, you gain a lot more flexibility and control.
+
+Using the index is quite simple with the git add and git commit commands. Basically, you add files onto the index, and once you’re satisfied with the changes commit them.
+
+Once they’re in the repository you can push them to remote locations, merge them into other branches, and much more. There’s also actions that can be performed on the staging area itself, such as temporarily stashing your changes.
 
 **3. Repository**
 There are namely two distinct repositories in github. They are:
