@@ -48,25 +48,27 @@ A remote in Git is a common repository that all team members use to exchange the
 
 Here are a list of other commands that you will see often and their uses:
 
-git init → Create a new git repository.\
-git add “newfile” → Add a new file to your staging area.\
-git commit → Adds staged changes to your local repository.\
-git push “remote” “ branch” → Push local repository changes to your hosting service\
-git pull “remote” “ branch” → pull code from your hosting service to your local directory\
-git branch → See local branches\
-git branch “newName” → Create new local branch\
-git checkout “branchName” → Switch branches\
-git diff → See the actual difference in code between your working tree and your staging area\
-git status → Show which files are being tracked v. untracked\
-git log → Show recent commit history\
-git show “commit_id” → show details of specific commit\
-git stash → stash working directory\
-git help → manpages for git\
-git help “gitCommand”
+1.  git init -> initializes on the current location
+2.  git init <name> -> initializes on the current location inside a folder <name>
+3.  git status - shows if there is any change displays "untracked file" if a new file is created but not committed
+4.  git add <name> -> stages only the <name> file 
+5.  git rm --cache <name> -> unstages the <name> file
+6.  git config --global user.name "<Username>" -> configures the global username as the given username
+7.  git config --global user.email "user@email.com" -> configures the global email as the giver email
+8.  git commit -> Adds staged changes to your local repository
+9.  git push “remote” “ branch” -> Push local repository changes to your hosting service
+10. git pull “remote” “ branch” -> pull code from your hosting service to your local directory
+11. git branch -> See local branches
+12. git branch “newName” -> Create new local branch
+13. git checkout “branchName” -> Switch branches
+14. git diff -> See the actual difference in code between your working tree and your staging area
+15. git log -> Show recent commit history
+16. git show “commit_id” -> show details of specific commit
+
 
 ## **Collaboration and Contribution on GitHub**
 
-The workflow for contributing code can seem daunting at first. The most important thing to remember is to follow the patterns and standards outlined by the project you are working on (as we have already discussed). The general workflow that GitHub supports is fairly simple.
+For the beginners, the concept of GitHub may seem too complex at first. But if one follows a simple set of steps and patterns, it becomes a lot easier.
 
 1.Fork the target repo to your own account.
 2.Clone the repo to your local machine.
@@ -103,4 +105,4 @@ To switch to an existing branch, you run the git checkout command. Let’s switc
 ### **Conclusion**
 
 
-From the above lab session we can conclude that Real life projects generally have multiple developers working in parallel. So a version control system like Git is needed to ensure there are no code conflicts between the developers.Additionally, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of the code.Finally, sometimes several projects which are being run in parallel involve the same codebase. In such a case, the concept of branching in Git is very important.
+Hence, from the lab work we learn how to collaborate in a project using Git. We also learned how to work parallelly. The use of Git makes it easier to track changes, respond to additional requests.requirements so a version control system allows developers to revert and go back to an older version of the code.
