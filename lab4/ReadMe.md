@@ -1,21 +1,23 @@
 # **Lab 4**
 
-# **Date : 14th march 2020**
-
 # **Objective 1: Servlet Interface**
 
 # **Theory :**
 
-Servlet Interface, When the Servlet is deployed in the server the Servlet container creates life cycle of the Servlet.
-The central abstraction in the Servlet API is the Servlet interface, all the Servlets have to implement this interface
-either directly or by extending a class such as GenericServlet, HttpServlet. Following are the different methods of servlet interface.
+A Servlet is small program which runs within a web server and public interface Servlet defines methods which is must implemented by all Servlet. For initialization a Servlet, For service requests and for removing a Servlet from the server this interface defines some methods. These methods are called life-cycle methods. Also it provides 2 non-life-cycle methods.
 
-1. public void init(ServletConfig config)
-2. public void service(ServletRequest request,ServletResponse response)
-3. public void destroy()
-4. public ServletConfig getServletConfig()
-5. public String getServletInfo()
-   <!-- Example is provided above -->
+# **Servlet Interface Methods**
+These are 5 life-cycle and non-life-cycle methods in Servlet Interface.
+
+**public void init(ServletConfig config)** :– This method is called by the Servlet container which indicates that Servlet is being placed into service. The Servlet container calls the init method only once post instantiating the Servlet. This is life-cycle method of Servlet.
+
+**public void service(ServletRequest request,ServletResponse response)** :-This method is called by the Servlet container which is used to allow the Servlet to respond to a request. This method is called post the init() method of Servlet.
+
+**public ServletConfig getServletConfig()** :-This method returns a ServletConfig object, which contains initialization and startup parameter for this Servlet.
+
+**public String getServletInfo()** :– This method returns information about the Servlet, like author, version, and copyright. The string that this methods returns must be plain text.
+
+**public void destroy()**:- If the Servlet taken out from the service so this method is being called by the Servlet container. After calling method by Servlet container, it will not call the service method again on this Servlet.
 
 # **Objective 2: Java Servlet POST Example**
 
@@ -36,7 +38,7 @@ Servlets handles form data parsing automatically using the following methods dep
 
 # **Theory :**
 
-A JavaServer Pages component is a type of Java servlet that is intended to fulfill the role of a user interface for a Java web application. Web developers create JSPs as text files that join HTML or XHTML code, XML elements, and embedded JSP actions and commands. Using JSP, you can assemble input from users over Webpage forms, present records from a database or different sources, and build Web pages dynamically. JSP tags can be used for a variety of purposes, such as retrieving data from a database or registering user preferences, accessing JavaBeans components, passing control among pages, and sharing information between requests, pages etc.JavaServer Pages usually serve the same purpose as programs executed using the Common Gateway Interface (CGI).
+JavaServer Pages (JSP) is a Java standard technology that enables you to write dynamic, data-driven pages for your Java web applications. JSP is built on top of the Java Servlet specification. The two technologies typically work together, especially in older Java web applications. From a coding perspective, the most obvious difference between them is that with servlets you write Java code and then embed client-side markup (like HTML) into that code, whereas with JSP you start with the client-side script or markup, then embed JSP tags to connect your page to the Java backend.
 
 ### Comparision of JSP and Servlet
 

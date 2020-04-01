@@ -8,7 +8,7 @@ pageEncoding="ISO-8859-1"%>
   </head>
   <body>
     <%! int count = 0; int increaseCount() { return count++; } String
-    returnName() { return "pravinewa"; } %> <% out.print("Hello Jsp"); %> <%=
+    returnName() { return "Bibek"; } %> <% out.print("Hello Jsp"); %> <%=
     "Value of count is = " + increaseCount() + "\tYour Name is " + returnName()
     %> Current Time: <%= java.util.Calendar.getInstance().getTime()%>
   </body>
